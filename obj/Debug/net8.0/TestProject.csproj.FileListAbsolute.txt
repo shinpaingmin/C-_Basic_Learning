@@ -12,3 +12,4 @@ D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\refint\TestProject.dll
 D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.pdb
 D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.genruntimeconfig.cache
 D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\ref\TestProject.dll
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.sourcelink.json
