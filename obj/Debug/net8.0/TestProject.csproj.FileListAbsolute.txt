@@ -1,0 +1,14 @@
+D:\C#\beginner\ms_challenge\TestProject\bin\Debug\net8.0\TestProject.exe
+D:\C#\beginner\ms_challenge\TestProject\bin\Debug\net8.0\TestProject.deps.json
+D:\C#\beginner\ms_challenge\TestProject\bin\Debug\net8.0\TestProject.runtimeconfig.json
+D:\C#\beginner\ms_challenge\TestProject\bin\Debug\net8.0\TestProject.dll
+D:\C#\beginner\ms_challenge\TestProject\bin\Debug\net8.0\TestProject.pdb
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.AssemblyInfoInputs.cache
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.AssemblyInfo.cs
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.csproj.CoreCompileInputs.cache
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.dll
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\refint\TestProject.dll
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.pdb
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\TestProject.genruntimeconfig.cache
+D:\C#\beginner\ms_challenge\TestProject\obj\Debug\net8.0\ref\TestProject.dll
