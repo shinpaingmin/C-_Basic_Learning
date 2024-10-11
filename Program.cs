@@ -1,48 +1,102 @@
-/*
-string[] fraudulentOrderIDs = new string[3];
+﻿// initialize variables - graded assignments 
+int examAssignments = 5;
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-// fraudulentOrderIDs[3] = "D000";
-*/
+int[] sophiaScores = {90, 86, 87, 98, 100, 94, 90};
+int[] andrewScores = {92, 89, 81, 96, 90, 89};
+int[] emmaScores = {90, 85, 87, 98, 68, 89, 89, 89};
+int[] loganScores = {90, 95, 87, 88, 96, 96};
 
-/*
-string[] fraudulentOrderIDs = ["A123", "B456", "C789"];
+// Student names
+string[] studentNames = new string[] {"Sophia", "Andrew", "Emma", "Logan"};
+int[] studentScores = new int[10];
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+string currentStudentLetterGrade = "";
 
-fraudulentOrderIDs[0] = "F000";
+// Write the Report Header to the console
+Console.WriteLine("Student\t\tGrade\n");
 
-Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
-*/
-
-/*
-int[] inventory = {200, 450, 700, 175, 250};
-int sum = 0;
-int bin = 0;
-
-foreach(int items in inventory)
+foreach(string name in studentNames)
 {
-    sum += items;
-    bin++;
-    Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
-}
+    string currentStudent = name;
+    if(currentStudent == "Sophia")
+        studentScores = sophiaScores;
+    
+    else if(currentStudent == "Andrew")
+        studentScores = andrewScores;
 
-Console.WriteLine($"We have {sum} items in inventory.");
-*/
+    else if(currentStudent == "Emma")
+        studentScores = emmaScores;
 
-/*
-string[] orderIDs = ["B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"];
+    else if(currentStudent == "Logan")
+        studentScores = loganScores;
 
-foreach(string id in orderIDs)
-{
-    if(id.StartsWith("B"))
+    // initialize/reset the sum of scored assignments
+    int sumAssignmentScores = 0;
+
+    // initialize/reset the calculated average of exam + extra credit scores
+    decimal currentStudentGrade = 0;
+
+    // initialize/ reset a counter for the number of assignments
+    int gradedAssignments = 0;
+
+    foreach(int score in studentScores)
     {
-        Console.WriteLine(id);
+        // increment the assignment counter
+        gradedAssignments++;
+
+        if(gradedAssignments <= examAssignments)
+            // add the exam score to the sum
+            sumAssignmentScores += score;   
+        else
+            // add the extra credit points to the sum - bonus points equal to 10% of an exam score
+            sumAssignmentScores += score / 10;
+        
     }
+
+    currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
+
+    if(currentStudentGrade >= 97)
+        currentStudentLetterGrade = "A+";
+
+    else if(currentStudentGrade >= 93)
+        currentStudentLetterGrade = "A";
+    
+    else if (currentStudentGrade >= 90)
+        currentStudentLetterGrade = "A-";
+
+    else if (currentStudentGrade >= 87)
+        currentStudentLetterGrade = "B+";
+
+    else if (currentStudentGrade >= 83)
+        currentStudentLetterGrade = "B";
+
+    else if (currentStudentGrade >= 80)
+        currentStudentLetterGrade = "B-";
+
+    else if (currentStudentGrade >= 77)
+        currentStudentLetterGrade = "C+";
+
+    else if (currentStudentGrade >= 73)
+        currentStudentLetterGrade = "C";
+
+    else if (currentStudentGrade >= 70)
+        currentStudentLetterGrade = "C-";
+
+    else if (currentStudentGrade >= 67)
+        currentStudentLetterGrade = "D+";
+
+    else if (currentStudentGrade >= 63)
+        currentStudentLetterGrade = "D";
+
+    else if (currentStudentGrade >= 60)
+        currentStudentLetterGrade = "D-";
+
+    else 
+        currentStudentLetterGrade = "F";
+    
+    Console.WriteLine($"{currentStudent}:\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
 }
-*/
+
+// required for running in VS Code (keeps the Output windows open to view results)
+Console.WriteLine("Press the Enter key to continue");
+Console.ReadLine();
